@@ -1,4 +1,4 @@
-window.jobs = [
+const APP_DATA = [
   {
     name: "Caltex D'Aguilar",
     status: "At Risk",
