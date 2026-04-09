@@ -1,5 +1,4 @@
-const APP_DATA = [
-  {
+const APP_DATA = {
     name: "Caltex D'Aguilar",
     status: "At Risk",
     weekEnding: "2026-04-02",
@@ -122,5 +121,4 @@ const APP_DATA = [
         text: "No activity records available."
       }
     ]
-  }
-];
+  };
