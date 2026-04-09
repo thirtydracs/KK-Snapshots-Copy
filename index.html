@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>K&amp;K Industries — Weekly Site Position</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-shell">
+
+    <!-- ── Topbar (always visible) ──────────────────────────── -->
+    <header class="topbar">
+      <div class="topbar-inner">
+        <h1 id="clientName">K&amp;K Industries</h1>
+        <div class="header-dates">
+          <div class="header-date-item">
+            <div class="header-date-label">Week Ending</div>
+            <div class="header-date-value" id="headerWeekEnding">—</div>
+          </div>
+          <div class="header-date-item">
+            <div class="header-date-label">Last Updated</div>
+            <div class="header-date-value" id="headerUpdated">—</div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-wrap">
+
+      <!-- ═══ HOME VIEW ═══════════════════════════════════════ -->
+      <div id="homeView">
+
+        <!-- KPI strip -->
+        <section id="kpi" class="kpi-strip" aria-label="Key metrics"></section>
+
+        <!-- Search & filter -->
+        <div class="search-filter-wrap">
+          <div class="search-row">
+            <input
+              type="text"
+              id="searchInput"
+              class="search-input"
+              placeholder="Search job name..."
+              autocomplete="off"
+              spellcheck="false"
+            />
+            <button id="searchClear" class="search-clear" aria-label="Clear search">✕</button>
+          </div>
+          <div id="filterTabs" class="filter-tabs" role="group" aria-label="Filter by status"></div>
+        </div>
+
+        <!-- Job grid -->
+        <div id="jobGrid" class="job-grid" role="list"></div>
+
+      </div>
+      <!-- ═══ END HOME VIEW ════════════════════════════════════ -->
+
+      <!-- ═══ DETAIL VIEW ══════════════════════════════════════ -->
+      <div id="detailView">
+        <div class="detail-page-wrap">
+          <button id="backBtn" class="back-btn">← Back to all jobs</button>
+          <div id="detailContent"></div>
+        </div>
+      </div>
+      <!-- ═══ END DETAIL VIEW ══════════════════════════════════ -->
+
+    </main>
+
+    <!-- ── Footer ───────────────────────────────────────────── -->
+    <footer id="appFooter" class="app-footer"></footer>
+
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
