@@ -378,7 +378,7 @@ function setupSearch() {
 // ─── Footer ───────────────────────────────────────────────────
 function renderFooter() {
   $footer.innerHTML = `
-    <span>Produced by Thirty Petals</span>
+    <span>Produced for K&K Industries</span>
     <span class="footer-sep">·</span>
     <span>Confidential</span>
   `;
